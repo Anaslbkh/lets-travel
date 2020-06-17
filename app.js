@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 //to handel json data
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost/travels', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://anasdhj:moi15072020@mycluster-qgi9v.mongodb.net/travels', { useNewUrlParser: true });
 
 let imageStorage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, 'public/images'),
