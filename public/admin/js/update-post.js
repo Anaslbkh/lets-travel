@@ -10,7 +10,7 @@
         if (e.target.classList.contains('btn-edit')) {
 
             id = e.target.parentNode.parentNode.querySelector('.id').value;
-            let postInfo = await fetch('http://localhost:3000/posts/' + id).then((res) => res.json())
+            let postInfo = await fetch('/posts/' + id).then((res) => res.json())
                 .then((data) => data)
 
             titleInp.value = postInfo.title;
@@ -31,7 +31,7 @@
 
     updateForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        fetch('http://localhost:3000/posts/' + id, {
+        fetch('/posts/' + id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
