@@ -58,7 +58,7 @@ app.get('/sight', async (req, res) => {
         text: post.text
     })
 })
-
-app.listen(3000, () => {
-    console.log('listening 300')
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`listening ${port}`)
 })
