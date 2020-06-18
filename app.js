@@ -58,6 +58,7 @@ app.get('/sight', async (req, res) => {
         text: post.text
     })
 })
+app.use("/js", express.static('./js/'));
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`listening ${port}`)
