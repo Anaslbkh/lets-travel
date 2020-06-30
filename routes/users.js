@@ -14,7 +14,7 @@ router.post('/login', async (req, res) => {
     let user = await User.find().where({ email: email });
     if (user.length > 0) {
         let comparisonResult = await bcrypt.compare(password, user[0].password);
-        if (comparisonResult) {
+        if (comparisonResult && (email === 'anasdhj608@gmail.com' || email === 'hananeLaarache@gmail.com')) {
             let token = auth.generateToken(user[0]);
             res.cookie('auth-token', token);
             res.send({

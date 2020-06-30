@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initail-scale=1.0">
+  <meta name=”robots” content=”index, follow”>
   <title>Let's Travel</title>
+  <meta name="description"
+    content="This a website that we share on articles about charming land of morocco, cool places, what you can do in morocco? what is the best places in morocco">
+  <meta name="keywords"
+    content="travel, morocco, adventures in morocco, visit africa, visit morocco, marakkech, casablanca">
+  <meta name="author" content="Anas Lebkhaiti">
+  <link rel="shortcut icon" href="images/logo.png" sizes="16x16">
+
   <link rel="stylesheet" href="CssStyle/all.min.css">
   <link rel="stylesheet" href="CssStyle/bootstrap.min.css">
   <link rel="stylesheet" href="CssStyle/sheetcss.css">
@@ -14,7 +22,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Let's Travel</a>
+        <a class="navbar-brand conImg" href="/"><img class="logoImg" src="/images/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,13 +33,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacts</a>
+              <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contacts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin" tabindex="-1" aria-disabled="true">Admin Page</a>
+              <a class="nav-link" href="/admin" tabindex="-1" aria-disabled="true">Content management</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 call-me-form">
@@ -43,7 +51,7 @@
     </nav>
   </header>
   <main>
-    <div class="container">
+    <div class="slideMarg container">
       <!--slider-->
       <div class="bd-example mt-20">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -54,25 +62,15 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Golden Gate Bridge</h5>
-                <p>San Francisco, U.S.</p>
-              </div>
+              <img src="images/SLIDE1.png" class="d-block w-100" alt="...">
+
             </div>
             <div class="carousel-item">
-              <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Niagara Falls</h5>
-                <p>Border of Ontario, Canada, and New York, United States</p>
-              </div>
+              <img src="images/Morocco_located.png" class="d-block w-100" alt="...">
+
             </div>
             <div class="carousel-item">
-              <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Stonehenge</h5>
-                <p>Wiltshire, England</p>
-              </div>
+              <img src="images/for more information about morocco.png" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -97,7 +95,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Contact us</h5>
+          <h5 id="contact" class="modal-title">Contact us</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

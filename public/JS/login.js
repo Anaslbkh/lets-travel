@@ -18,7 +18,7 @@ signInForm.addEventListener('submit', (e) => {
         return res.json();
     }).then((data) => {
         window.location.href = data.redirectURL;
-    }).catch((e) => alert('wrong email or password'))
+    }).catch((e) => alert(`wrong email or password, or you're not an Admin`))
 })
 
 registerForm.addEventListener('submit', (e) => {
@@ -35,5 +35,5 @@ registerForm.addEventListener('submit', (e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({ email, password })
-    }).then((res) => res.text()).then((data) => alert(data));
+    }).then((res) => res.text()).then((data) => alert(data + ' thank you for signing in,For now this future is only available for Admin, we will do our best to add it as soon as possible'));
 })

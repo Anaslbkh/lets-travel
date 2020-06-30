@@ -3,7 +3,8 @@
 }
 footer{
     height: 80px;
-margin-top: 50px;
+margin-top: 200px;
+margin-bottom: 0;
 }
 footer>.container,footer .row{
     height: 100%;
@@ -70,7 +71,7 @@ width: 10%;
     font-weight: bold;
 }
 .map{
-    height: 400px;
+    height: 500px;
 }
 .login-container{
     margin-top: 50px;
@@ -84,4 +85,179 @@ width: 10%;
 }
 #myTabContent{
     margin-top: 20px;
+}
+
+.card-img-top{
+    min-height: 300px;
+    max-height: 301px;
+}
+
+/*weather div */
+.container-weather{
+    width: 300px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 40px auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+    
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+@media only screen and (max-width: 990px) {
+    .logoImg{
+        width: 200px;
+        height: 70px;
+    }
+    .containerSight{
+        width: 100%;
+    }
+    .conImg{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.slideMarg{
+margin-bottom: 50px;
+}
+@media only screen and (max-width: 770px) {
+    .w-100{
+        height: 250px;
+    }
+    .logoImg{
+        height: 60px;
+    }
+    .conImg{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  .audioArticel button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .audioArticel button i{
+    font-size: 64px;
+    COLOR: #0a6c9b;
+    BACKGROUND: #e4f3f4;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 0 10px;
+  }
+  .audioArticel button i:hover{
+    box-shadow: -1px 0px 9px 2px #978484;
+    COLOR:  #e4f3f4;
+    BACKGROUND: #0a6c9b;
+  }
+.containerX{
+    padding-bottom: 100px;
+}
+
+
+  .audioArticel p{
+    margin: 0;
+    white-space: nowrap;
+  }
+button{
+    all: unset;
+    outline: none;
+}
+
+@media only screen and (min-width: 990px){
+    .logoImg{
+        width: 100px;
+    }
 }
