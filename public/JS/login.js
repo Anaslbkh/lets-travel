@@ -13,7 +13,7 @@ signInForm.addEventListener('submit', (e) => {
         body: JSON.stringify({ email, password })
     }).then((res) => {
         if (res.status === 400) {
-            return new Error();
+            return;
         }
         return res.json();
     }).then((data) => {
